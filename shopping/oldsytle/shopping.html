@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="shopping.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>My Shopping List</h2>
+    <div class="input-group">
+        <input placeholder="add shopping list item" type="text" class="js-new-item form-control">
+        <span class="input-group-btn">
+                <button @click="addItem" class="js-add btn btn-default" type="button">Add!</button>
+            </span>
+    </div>
+</div>
+<ul>
+    <li>
+        <div class="checkbox">
+            <label>
+                <input class="js-item" name="list" type="checkbox"> Carrot
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="checkbox">
+            <label>
+                <input class="js-item" name="list" type="checkbox"> Book
+            </label>
+        </div>
+    </li>
+    <li class="removed">
+        <div class="checkbox">
+            <label>
+                <input class="js-item" name="list" type="checkbox" checked> Gift for aunt's birthday
+            </label>
+        </div>
+    </li>
+</ul>
+<div class="footer">
+    <hr />
+    <em>Change the title for your shopping list here</em>
+    <input class="js-change-title" type="text" value="My Shopping List"/>
+</div>
+</body>
+</html>

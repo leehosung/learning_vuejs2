@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.11/vue.js"></script>
+    <script src="shopping.js"></script>
+</head>
+<body>
+<div id="app" class="container">
+    <h2>{{ title }}</h2>
+    <add-item-component></add-item-component>
+    <items-component></items-component>
+    <div class="footer">
+        <hr />
+        <em>Change the title for your shopping list here</em>
+        <change-title-component></change-title-component>
+    </div>
+</div>
+</body>
+</html>
